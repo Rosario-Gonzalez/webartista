@@ -1,0 +1,164 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: black; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 15px;
+    background-color: #f0f0f0; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #dcdcdc; 
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black; 
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.theme-button {
+    border: 1px solid black;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background: none;
+    color: black;
+    cursor: pointer;
+}
+
+/* Estilos para la pantalla de carga */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.loading-screen.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* Estilos para la sección de publicar */
+.publicar-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.upload-label {
+    display: block;
+    font-size: 18px;
+    color: black; 
+}
+
+.file-upload-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#file-upload {
+    display: none;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos del tema oscuro */
+[data-theme="dark"] {
+    background-color: #000000; 
+    color: white; 
+}
+
+[data-theme="dark"] .navbar {
+    background-color: #222222; 
+}
+
+[data-theme="dark"] .nav-links a {
+    color: white; 
+}
+
+[data-theme="dark"] .submit-button {
+    background-color: #555;
+}
+
+[data-theme="dark"] .submit-button:hover {
+    background-color: #666;
+}
+
+[data-theme="dark"] .theme-button {
+    color: white; 
+    border-color: white;
+}
+
+/* Estilos de la sección de publicar en modo oscuro */
+[data-theme="dark"] .publicar-section {
+    color: rgb(255, 255, 255); 
+}
+
+[data-theme="dark"] .upload-label {
+    color: white; 
+}
+
+[data-theme="dark"] .file-upload-box {
+    border: 1px solid #fff; 
+    background-color: #444; 
+    color: white; /
+}
+
+[data-theme="dark"] .file-upload-box:hover {
+    background-color: #666; 
+}
+
+[data-theme="dark"] .submit-button {
+    background-color: #555;
+}
+
+[data-theme="dark"] .submit-button:hover {
+    background-color: #666;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Letras</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleA.css">
+</head>
+<body>
+    <div id="loading-screen" class="loading-screen">
+        <p>Cargando...</p>
+    </div>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#" id="home-link">Inicio</a></li>
+            <li><a href="Publicar.html">Publicar</a></li>
+        </ul>
+        <button id="toggle-theme" class="theme-button">Modo Oscuro</button>
+    </nav>
+    
+    <main class="main-content">
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Buscar letra...">
+            <button id="search-btn">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/free-busqueda-1895571-1604561.png?f=webp" alt="Buscar" class="search-icon">
+            </button>
+        </div>
+
+        <div id="lyrics-display" class="lyrics-display">
+            <h2 id="song-title" class="song-title"></h2>
+            <button id="copy-btn" class="copy-button" style="display: none;">Copiar Letra</button>
+            <pre id="lyrics-container" class="lyrics-container"></pre>
+        </div>
+    </main>
+
+    <script src="scriptA.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección Publicar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Publicar.css">
+</head>
+<body>
+    <!-- Pantalla de carga -->
+    <div id="loading-screen" class="loading-screen">
+        <p>Cargando...</p>
+    </div>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="indexA.html" id="home-link">Inicio</a></li>
+            <li><a href="#publicar">Publicar</a></li>
+        </ul>
+        <button id="toggle-theme" class="theme-button">Modo Oscuro</button>
+    </nav>
+    <main>
+        <section id="publicar" class="publicar-section">
+            <h2>Publicar</h2>
+            <form id="upload-form">
+                <div class="form-group file-upload-container">
+                    <label for="file-upload" class="upload-label">Selecciona un archivo para cargar:</label>
+                    <div class="file-upload-box">
+                        <input type="file" id="file-upload" accept=".txt,audio/*" required />
+                        <span>Seleccionar archivo</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>¿Quieres que sea anónimo?</label>
+                    <button type="button" id="incognito-yes">Sí</button>
+                    <button type="button" id="incognito-no">No</button>
+                </div>
+                <div class="form-group" id="name-input-container" style="display: none;">
+                    <label for="user-name">Ingresa tu nombre:</label>
+                    <input type="text" id="user-name" placeholder="Nombre" />
+                </div>
+                <button type="submit" class="submit-button">Publicar</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="Publicar.js"></script>
+</body>
+</html>
